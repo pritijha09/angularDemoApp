@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demoApp';
+  title = 'Hello child';
+  message: string='';
+  getDataFromChild(event: string){
+    this.message = event;
+  }
 }
