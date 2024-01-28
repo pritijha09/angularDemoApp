@@ -17,6 +17,7 @@ export class ChildComponent implements OnInit {
 
   sendToParent(){
     let data = 'Hello Parent component!'
+    console.log("hello")
     this.sendDataToParent.emit(data);
   }
 

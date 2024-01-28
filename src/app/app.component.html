@@ -1,12 +1,6 @@
-<!-- create child component
-add child component to parent parent component
-send data to child component using @Input decorator
-fetch data in child and display it
-send data to child- parent -->
-
-
-
 <h1>Welcome to angular</h1>
-<app-child [titleMessage]="title" (sendDataToParent)="getDataFromChild($event)"></app-child>
-<h4>{{message}}</h4>
+<h3>{{greeting}}</h3>
+<h3>{{person?.name}}</h3>
+<h3>Sum of two numbers - {{number1 + number2}}</h3>
+<h3>Multiply of two num - {{number1 * number2}}</h3>
 <router-outlet></router-outlet>
