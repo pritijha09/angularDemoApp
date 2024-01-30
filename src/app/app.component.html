@@ -3,4 +3,14 @@
 <h3>{{person?.name}}</h3>
 <h3>Sum of two numbers - {{number1 + number2}}</h3>
 <h3>Multiply of two num - {{number1 * number2}}</h3>
+<ul>
+    <li *ngFor="let list of items;let i=index">{{i+1}} {{list}}</li>
+</ul>
+<ul>
+    <li *ngFor="let product of productList">{{product.id}} - {{product.name}}</li>
+</ul>
+
+<div *ngFor="let list of myObject | keyvalue">
+    {{list.key}} - {{list.value}}
+</div>
 <router-outlet></router-outlet>
